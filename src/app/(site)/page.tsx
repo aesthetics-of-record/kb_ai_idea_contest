@@ -26,6 +26,8 @@ import clsx from 'clsx';
 import CustomCard from '@/components/landing-page/custom-card';
 import Diamond from '../../../public/icons/diamond.svg';
 import CheckIcon from '../../../public/icons/check.svg';
+import PlayerSection from '@/components/landing-page/player-section';
+import { AudioSection } from '@/components/landing-page/audio-section';
 
 const HomePage = () => {
   return (
@@ -33,8 +35,8 @@ const HomePage = () => {
       <section>
         <div className="overflow-hidden px-4 sm:px-6 mt-10 sm:flex sm:flex-col gap-4 md:justify-center md:items-center">
           <TitleSection
-            pill="✨ 당신의 완벽한 워크스페이스"
-            title="All-In-One 협업 / 생산 플랫폼"
+            pill="✨ 경북 AI 프로젝트 데모"
+            title="AI 활용 영상/음악 예시 데모"
           />
           <div
             className="bg-white
@@ -56,10 +58,10 @@ const HomePage = () => {
             bg-background
           "
             >
-              Get Cypress Free
+              Demo
             </Button>
           </div>
-          <div
+          {/* <div
             className="md:mt-[-90px]
           sm:w-full
           w-[750px]
@@ -87,7 +89,8 @@ const HomePage = () => {
             z-10
           "
             ></div>
-          </div>
+          </div> */}
+          <PlayerSection />
         </div>
       </section>
       <section className="relative">
@@ -172,11 +175,11 @@ const HomePage = () => {
         "
         />
         <TitleSection
-          title="Keep track of your meetings all in one place"
+          title="AI를 이용한 경북 홍보 음악"
           subheading="Capture your ideas, thoughts, and meeting notes in a structured and organized manner."
-          pill="Features"
+          pill="🎄 오디오 AI"
         />
-        <div
+        {/* <div
           className="mt-10
           max-w-[450px]
           flex
@@ -195,7 +198,8 @@ const HomePage = () => {
             alt="Banner"
             className="rounded-2xl"
           />
-        </div>
+        </div> */}
+        <AudioSection />
       </section>
       <section className="relative">
         <div
@@ -220,14 +224,13 @@ const HomePage = () => {
         "
         >
           <TitleSection
-            title="Trusted by all"
-            subheading="Join thousands of satisfied users who rely on our platform for their 
-            personal and professional productivity needs."
-            pill="Testimonials"
+            title="팀 멤버"
+            subheading=""
+            pill="Member"
           />
           {[...Array(2)].map((arr, index) => (
             <div
-              key={randomUUID()}
+              key={index}
               className={twMerge(
                 clsx('mt-10 flex flex-nowrap gap-6 self-start', {
                   'flex-row-reverse': index === 1,
@@ -287,11 +290,11 @@ const HomePage = () => {
       "
       >
         <TitleSection
-          title="The Perfect Plan For You"
+          title="구현 보고서"
           subheading="Experience all the benefits of our platform. Select a plan that suits your needs and take your productivity to new heights."
-          pill="Pricing"
+          pill="Report"
         />
-        <div
+        {/* <div
           className="flex 
         flex-col-reverse
         sm:flex-row
@@ -396,7 +399,7 @@ const HomePage = () => {
               }
             />
           ))}
-        </div>
+        </div> */}
       </section>
     </>
   );
