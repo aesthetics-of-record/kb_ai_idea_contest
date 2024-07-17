@@ -213,6 +213,10 @@ const HomePage = () => {
             imgUrl="/covers/img3.jpeg"
             soundUrl="/sounds/경주의 아름다움.mp3"
           />
+          <AudioPlayer
+            imgUrl="/covers/img4.jpg"
+            soundUrl="/sounds/경상북도 찬가.mp3"
+          />
         </div>
       </section>
       <section className="relative">

@@ -27,7 +27,6 @@ export const AudioPlayer = ({
     } else {
       play();
     }
-
     setIsPlaying(!isPlaying);
   };
 
