@@ -28,6 +28,7 @@ import Diamond from '../../../public/icons/diamond.svg';
 import CheckIcon from '../../../public/icons/check.svg';
 import PlayerSection from '@/components/landing-page/player-section';
 import { AudioPlayer } from '@/components/landing-page/audio-player';
+import ShortsSection from '@/components/landing-page/shorts-section';
 
 const HomePage = () => {
   return (
@@ -219,6 +220,23 @@ const HomePage = () => {
           />
         </div>
       </section>
+      
+      <section
+        className="mt-20
+        px-4
+        sm:px-6
+      "
+      >
+        <TitleSection
+          title="숏츠"
+          subheading="짧은 영상들입니다."
+          pill="Shorts"
+        />
+        <div className='h-8'/>
+        <ShortsSection />
+        
+      </section>
+
       <section className="relative">
         <div
           className="w-full
@@ -300,124 +318,6 @@ const HomePage = () => {
             </div>
           ))}
         </div>
-      </section>
-      <section
-        className="mt-20
-        px-4
-        sm:px-6
-      "
-      >
-        <TitleSection
-          title="구현 보고서"
-          subheading="우리의 구현 스토리입니다."
-          pill="Report"
-        />
-        {/* <div
-          className="flex 
-        flex-col-reverse
-        sm:flex-row
-        gap-4
-        justify-center
-        sm:items-stretch
-        items-center
-        mt-10
-        "
-        >
-          {PRICING_CARDS.map((card) => (
-            <CustomCard
-              key={card.planType}
-              className={clsx(
-                'w-[300px] rounded-2xl dark:bg-black/40 background-blur-3xl relative',
-                {
-                  'border-brand-primaryPurple/70':
-                    card.planType === PRICING_PLANS.proplan,
-                }
-              )}
-              cardHeader={
-                <CardTitle
-                  className="text-2xl
-                  font-semibold
-              "
-                >
-                  {card.planType === PRICING_PLANS.proplan && (
-                    <>
-                      <div
-                        className="hidden dark:block w-full blur-[120px] rounded-full h-32
-                        absolute
-                        bg-brand-primaryPurple/80
-                        -z-10
-                        top-0
-                      "
-                      />
-                      <Image
-                        src={Diamond}
-                        alt="Pro Plan Icon"
-                        className="absolute top-6 right-6"
-                      />
-                    </>
-                  )}
-                  {card.planType}
-                </CardTitle>
-              }
-              cardContent={
-                <CardContent className="p-0">
-                  <span
-                    className="font-normal 
-                    text-2xl
-                "
-                  >
-                    ${card.price}
-                  </span>
-                  {+card.price > 0 ? (
-                    <span className="dark:text-washed-purple-800 ml-1">
-                      /mo
-                    </span>
-                  ) : (
-                    ''
-                  )}
-                  <p className="dark:text-washed-purple-800">
-                    {card.description}
-                  </p>
-                  <Button
-                    variant="btn-primary"
-                    className="whitespace-nowrap w-full mt-4"
-                  >
-                    {card.planType === PRICING_PLANS.proplan
-                      ? 'Go Pro'
-                      : 'Get Started'}
-                  </Button>
-                </CardContent>
-              }
-              cardFooter={
-                <ul
-                  className="font-normal
-                  flex
-                  mb-2
-                  flex-col
-                  gap-4
-                "
-                >
-                  <small>{card.highlightFeature}</small>
-                  {card.freatures.map((feature) => (
-                    <li
-                      key={feature}
-                      className="flex
-                      items-center
-                      gap-2
-                    "
-                    >
-                      <Image
-                        src={CheckIcon}
-                        alt="Check Icon"
-                      />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              }
-            />
-          ))}
-        </div> */}
       </section>
     </>
   );

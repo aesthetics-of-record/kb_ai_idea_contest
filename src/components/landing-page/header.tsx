@@ -86,7 +86,7 @@ const Header = () => {
       dark:text-white
     "
         >
-          cypress.
+          기록의미학
         </span>
       </Link>
       <NavigationMenu className="hidden md:block">

@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/lib/providers/next-theme-provider';
-import { DM_Sans } from 'next/font/google';
+import { DM_Sans, Song_Myung } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 import Head from 'next/head';
 
-const inter = DM_Sans({ subsets: ['latin'] });
+const inter = Song_Myung({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   title: '경북 AI 아이디어 공모전',
