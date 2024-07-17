@@ -176,7 +176,7 @@ const HomePage = () => {
         />
         <TitleSection
           title="AI를 이용한 경북 홍보 음악"
-          subheading="Capture your ideas, thoughts, and meeting notes in a structured and organized manner."
+          subheading="AI를 이용해 제작한 음악들 입니다."
           pill="🎄 오디오 AI"
         />
         {/* <div
@@ -199,6 +199,7 @@ const HomePage = () => {
             className="rounded-2xl"
           />
         </div> */}
+        <div className="h-8" />
         <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
           <AudioPlayer
             imgUrl="/covers/img1.jpeg"
@@ -304,7 +305,7 @@ const HomePage = () => {
       >
         <TitleSection
           title="구현 보고서"
-          subheading="Experience all the benefits of our platform. Select a plan that suits your needs and take your productivity to new heights."
+          subheading="우리의 구현 스토리입니다."
           pill="Report"
         />
         {/* <div
