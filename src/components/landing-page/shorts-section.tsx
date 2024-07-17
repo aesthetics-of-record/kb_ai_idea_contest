@@ -27,6 +27,7 @@ const ShortsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {shorts_list.map((url, i) => {
             return <div
+            key={i}
             className="flex justify-center"
               onMouseEnter={() => {
                 const copy = [...play]
