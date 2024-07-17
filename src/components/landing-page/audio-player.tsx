@@ -14,7 +14,7 @@ export const AudioPlayer = ({
   soundUrl: string;
   imgUrl: string;
 }) => {
-  const [playbackRate, setPlaybackRate] = useState(0.75);
+  const [playbackRate, setPlaybackRate] = useState(1);
   const [isPlaying, setIsPlaying] = useState(false);
 
   const [play, { stop, pause, duration }] = useSound(soundUrl, {
@@ -22,7 +22,6 @@ export const AudioPlayer = ({
   });
 
   const handleClick = () => {
-    // setPlaybackRate(playbackRate + 0.1);
     if (isPlaying) {
       pause();
     } else {
