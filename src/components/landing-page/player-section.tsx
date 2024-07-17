@@ -16,7 +16,7 @@ const PlayerSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <ReactPlayer
             url="https://www.youtube.com/watch?v=phcQa8-dpgY"
-            width={400}
+            width={350}
           />
         </div>
       )}
