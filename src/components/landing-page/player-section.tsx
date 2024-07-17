@@ -18,6 +18,10 @@ const PlayerSection = () => {
             url="https://www.youtube.com/watch?v=phcQa8-dpgY"
             width={350}
           />
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=KwS6KUJm7to"
+            width={350}
+          />
         </div>
       )}
     </>
