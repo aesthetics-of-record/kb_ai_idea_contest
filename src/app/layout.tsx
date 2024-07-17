@@ -3,6 +3,7 @@ import './globals.css';
 import { ThemeProvider } from '@/lib/providers/next-theme-provider';
 import { DM_Sans } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
+import Head from 'next/head';
 
 const inter = DM_Sans({ subsets: ['latin'] });
 
@@ -18,6 +19,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <Head>
+        <link
+          rel="icon"
+          href="/favicon.ico"
+        />
+        <meta
+          property="og:title"
+          content="경북 AI 아이디어 공모전"
+        />
+        <meta
+          property="og:description"
+          content="Welcom To Our Demo Project"
+        />
+        <meta
+          property="og:image"
+          content="/favicon.ico"
+        />
+      </Head>
       <body className={twMerge('bg-background', inter.className)}>
         <ThemeProvider
           attribute="class"
