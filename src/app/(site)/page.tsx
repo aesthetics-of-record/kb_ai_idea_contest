@@ -27,7 +27,7 @@ import CustomCard from '@/components/landing-page/custom-card';
 import Diamond from '../../../public/icons/diamond.svg';
 import CheckIcon from '../../../public/icons/check.svg';
 import PlayerSection from '@/components/landing-page/player-section';
-import { AudioSection } from '@/components/landing-page/audio-section';
+import { AudioPlayer } from '@/components/landing-page/audio-player';
 
 const HomePage = () => {
   return (
@@ -199,7 +199,20 @@ const HomePage = () => {
             className="rounded-2xl"
           />
         </div> */}
-        <AudioSection />
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
+          <AudioPlayer
+            imgUrl="/covers/img1.jpeg"
+            soundUrl="/sounds/The K-Dream.mp3"
+          />
+          <AudioPlayer
+            imgUrl="/covers/img2.jpeg"
+            soundUrl="/sounds/our_kj.mp3"
+          />
+          <AudioPlayer
+            imgUrl="/covers/img3.jpeg"
+            soundUrl="/sounds/경주의 아름다움.mp3"
+          />
+        </div>
       </section>
       <section className="relative">
         <div

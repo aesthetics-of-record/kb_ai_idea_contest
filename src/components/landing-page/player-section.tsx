@@ -13,8 +13,11 @@ const PlayerSection = () => {
   return (
     <>
       {isClient && (
-        <div className="grid grid-cols-2 gap-4">
-          <ReactPlayer url="https://www.youtube.com/watch?v=phcQa8-dpgY" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=phcQa8-dpgY"
+            width={400}
+          />
         </div>
       )}
     </>
