@@ -36,10 +36,10 @@ const HomePage = () => {
       <section>
         <div className="overflow-hidden px-4 sm:px-6 mt-10 sm:flex sm:flex-col gap-4 md:justify-center md:items-center">
           <TitleSection
-            pill="✨ 경북 AI 프로젝트 데모"
-            title="AI 활용 영상/음악 예시 데모"
+            pill="Gyeongsangbuk-do AI Project"
+            title="AI 활용 홍보 영상"
           />
-          <div
+          {/* <div
             className="bg-white
           p-[2px]
           mt-6
@@ -61,7 +61,7 @@ const HomePage = () => {
             >
               Demo
             </Button>
-          </div>
+          </div> */}
           {/* <div
             className="md:mt-[-90px]
           sm:w-full
@@ -134,7 +134,7 @@ const HomePage = () => {
               {CLIENTS.map((client) => (
                 <div
                   key={client.alt}
-                  className=" relative
+                  className="relative
                     w-[200px]
                     m-20
                     shrink-0
@@ -176,9 +176,9 @@ const HomePage = () => {
         "
         />
         <TitleSection
-          title="AI를 이용한 경북 홍보 음악"
+          title="AI 홍보 음악"
           subheading="AI를 이용해 제작한 음악들 입니다."
-          pill="🎄 오디오 AI"
+          pill="Audio AI"
         />
         {/* <div
           className="mt-10
@@ -204,7 +204,7 @@ const HomePage = () => {
         <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
           <AudioPlayer
             imgUrl="/covers/img1.jpeg"
-            soundUrl="/sounds/The K-Dream.mp3"
+            soundUrl="/sounds/1.mp3"
           />
           <AudioPlayer
             imgUrl="/covers/img2.jpeg"
@@ -218,6 +218,10 @@ const HomePage = () => {
             imgUrl="/covers/img4.jpg"
             soundUrl="/sounds/경상북도 찬가.mp3"
           />
+          <AudioPlayer
+            imgUrl="/covers/img5.jpeg"
+            soundUrl="/sounds/5.mp3"
+          />
         </div>
       </section>
       
@@ -229,7 +233,7 @@ const HomePage = () => {
       >
         <TitleSection
           title="숏츠"
-          subheading="짧은 영상들입니다."
+          subheading="AI를 이용해 제작한 영상소스들입니다."
           pill="Shorts"
         />
         <div className='h-8'/>
@@ -295,8 +299,8 @@ const HomePage = () => {
                   "
                     >
                       <Avatar>
-                        <AvatarImage src={`/avatars/${index + 1}.png`} />
-                        <AvatarFallback>AV</AvatarFallback>
+                        <AvatarImage src={`/avatars/${testimonial.image}`} />
+                        <AvatarFallback>P</AvatarFallback>
                       </Avatar>
                       <div>
                         <CardTitle className="text-foreground">
@@ -318,6 +322,9 @@ const HomePage = () => {
             </div>
           ))}
         </div>
+      </section>
+      <section>
+        <div className='h-52'/>
       </section>
     </>
   );

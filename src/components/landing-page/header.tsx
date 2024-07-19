@@ -14,7 +14,7 @@ import {
 } from '../ui/navigation-menu';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import Logo from '../../../public/cypresslogo.svg';
+import Logo from '../../../public/logo.png';
 
 const routes = [
   { title: 'Features', href: '#features' },
@@ -77,19 +77,19 @@ const Header = () => {
       >
         <Image
           src={Logo}
-          alt="Cypress Logo"
-          width={25}
-          height={25}
+          alt="Logo"
+          width={40}
+          height={40}
         />
         <span
           className="font-semibold
       dark:text-white
     "
         >
-          기록의미학
+          상상공작소
         </span>
       </Link>
-      <NavigationMenu className="hidden md:block">
+      {/* <NavigationMenu className="hidden md:block">
         <NavigationMenuList className="gap-6">
           <NavigationMenuItem>
             <NavigationMenuTrigger
@@ -217,7 +217,7 @@ const Header = () => {
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu>
+      </NavigationMenu> */}
       <aside
         className="flex
     w-full
