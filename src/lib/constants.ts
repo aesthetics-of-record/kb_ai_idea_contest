@@ -15,32 +15,32 @@ export const CLIENTS = [
 export const USERS = [
   {
     name: "박석진",
-    message: "PM을 맡았습니다.",
+    message: "AI 음원제작 및 PM을 맡았습니다.",
     image: "박석진.jpg",
   },
   {
     name: "이조희",
-    message: "이조희입니다.",
+    message: "웹 개발을 맡았습니다.",
     image: "이조희.png",
   },
   {
     name: "박시훈",
-    message: "I❤경북",
+    message: "AI 영상제작을 맡았습니다.",
     image: "박시훈.jpg",
   },
   {
     name: "박석진",
-    message: "PM을 맡았습니다.",
+    message: "AI 음원제작 및 PM을 맡았습니다.",
     image: "박석진.jpg",
   },
   {
     name: "이조희",
-    message: "이조희입니다.",
+    message: "웹 개발을 맡았습니다.",
     image: "이조희.png",
   },
   {
     name: "박시훈",
-    message: "I❤경북",
+    message: "AI 영상제작을 맡았습니다.",
     image: "박시훈.jpg",
   },
 ];

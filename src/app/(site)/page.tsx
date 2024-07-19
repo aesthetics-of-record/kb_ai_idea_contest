@@ -232,7 +232,7 @@ const HomePage = () => {
       "
       >
         <TitleSection
-          title="숏츠"
+          title="쇼츠"
           subheading="AI를 이용해 제작한 영상소스들입니다."
           pill="Shorts"
         />
