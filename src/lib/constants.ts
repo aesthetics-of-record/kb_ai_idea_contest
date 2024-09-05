@@ -20,13 +20,13 @@ export const USERS = [
   },
   {
     name: "이조희",
-    message: "웹 개발을 맡았습니다.",
-    image: "이조희.png",
+    message: "AI 영상제작을 맡았습니다.",
+    image: "이조희.jpg",
   },
   {
     name: "박시훈",
-    message: "AI 영상제작을 맡았습니다.",
-    image: "박시훈.jpg",
+    message: "웹 개발을 맡았습니다.",
+    image: "김범수.jpg",
   },
   {
     name: "박석진",
@@ -35,13 +35,13 @@ export const USERS = [
   },
   {
     name: "이조희",
-    message: "웹 개발을 맡았습니다.",
-    image: "이조희.png",
+    message: "AI 영상제작을 맡았습니다.",
+    image: "이조희.jpg",
   },
   {
     name: "박시훈",
-    message: "AI 영상제작을 맡았습니다.",
-    image: "박시훈.jpg",
+    message: "웹 개발을 맡았습니다.",
+    image: "김범수.jpg",
   },
 ];
 
